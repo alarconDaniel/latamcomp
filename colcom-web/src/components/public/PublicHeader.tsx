@@ -38,7 +38,7 @@ export function PublicHeader() {
 
   const basePath = activeSlug === 'latam' ? '/' : `/${activeSlug}`;
   
-  
+
 
   const navLinks: NavLinkConfig[] = [
     { id: 'inicio', label: 'Inicio', path: '/' },

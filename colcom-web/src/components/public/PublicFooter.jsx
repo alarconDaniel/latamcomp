@@ -17,7 +17,9 @@ export function PublicFooter() {
             {/* Logo Mark */}
             <button
               type="button"
-              onClick={() => navigate(activeSlug === 'latam' ? '/' : `/${activeSlug}`)}
+              onClick={() =>
+                navigate(activeSlug === "latam" ? "/" : `/${activeSlug}`)
+              }
               aria-label="Ir al inicio"
               className="brand group flex items-center gap-3 bg-transparent border-0 p-0 cursor-pointer shrink-0"
             >
@@ -81,19 +83,31 @@ export function PublicFooter() {
               Navega
             </h4>
             <button
-              onClick={() => navigate(`${activeSlug === 'latam' ? '/' : `/${activeSlug}`}#somos`)}
+              onClick={() =>
+                navigate(
+                  `${activeSlug === "latam" ? "/" : `/${activeSlug}`}#somos`,
+                )
+              }
               className="text-left hover:text-white transition-colors w-fit"
             >
               Quiénes somos
             </button>
             <button
-              onClick={() => navigate(`${activeSlug === 'latam' ? '/' : `/${activeSlug}`}#impacto`)}
+              onClick={() =>
+                navigate(
+                  `${activeSlug === "latam" ? "/" : `/${activeSlug}`}#impacto`,
+                )
+              }
               className="text-left hover:text-white transition-colors w-fit"
             >
               Nuestro impacto
             </button>
             <button
-              onClick={() => navigate(`${activeSlug === 'latam' ? '/' : `/${activeSlug}`}#equipo`)}
+              onClick={() =>
+                navigate(
+                  `${activeSlug === "latam" ? "/" : `/${activeSlug}`}#equipo`,
+                )
+              }
               className="text-left hover:text-white transition-colors w-fit"
             >
               Equipo
@@ -116,6 +130,15 @@ export function PublicFooter() {
             >
               Tu aula
             </button>
+
+            <a
+              href="https://colombia-comparte-dashboard.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-left hover:text-white transition-colors w-fit"
+            >
+              Simulador
+            </a>
           </div>
 
           <div className="flex flex-col gap-4">
