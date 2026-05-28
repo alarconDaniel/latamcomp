@@ -36,7 +36,7 @@ export function ContentListPage({ type }) {
     setLoading(true);
     setError('');
     // Solo enviamos estado si tiene valor - el backend filtra el país por token JWT
-    const query: Record<string, string> = {};
+    const query = {};
     if (filters.estado) query.estado = filters.estado;
     
     api.getAll(query)
