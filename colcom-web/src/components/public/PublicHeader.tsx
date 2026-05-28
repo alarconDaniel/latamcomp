@@ -41,7 +41,7 @@ export function PublicHeader() {
   
 
   const navLinks: NavLinkConfig[] = [
-  //  {id: 'inicio', label: 'Inicio', path: `${basePath}` },
+    { id: 'inicio', label: 'Inicio', path: '/' },
     { id: 'somos', label: 'Quiénes somos', path: `${basePath}#somos` },
     { id: 'impacto', label: 'Nuestro impacto', path: `${basePath}#impacto` },
     { id: 'equipo', label: 'Equipo', path: `${basePath}#equipo` },
