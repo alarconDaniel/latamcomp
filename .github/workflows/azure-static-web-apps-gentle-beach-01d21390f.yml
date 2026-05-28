@@ -40,12 +40,13 @@ jobs:
           VITE_CHATBOT_API_URL: ${{ vars.VITE_CHATBOT_API_URL }}
           VITE_USE_MOCK_API: "false"
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_<GENERATED_HOSTNAME> }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GENTLE_BEACH_01D21390F }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "colcom-web"
           api_location: ""
           output_location: "dist"
+          github_id_token: ${{ steps.idtoken.outputs.result }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
